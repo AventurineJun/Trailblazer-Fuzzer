@@ -13,11 +13,15 @@ import time
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 from datetime import datetime
-# [추가] psutil 라이브러리 임포트
+
 try:
+
     import psutil
+
 except ImportError:
+
     print("psutil is not installed. Please install it using: pip install psutil")
+
     sys.exit(1)
 
 class Colors:
